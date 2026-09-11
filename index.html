@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Gerador de Senha</h1>
+
+    <input type="text" id="campo-senha" readonly>
+
+    <!-- Força da senha -->
+    <div class="forca-senha">
+
+        <p>Força da senha:</p>
+
+        <div class="barra-forca">
+            <div class="nivel-forca"></div>
+        </div>
+
+        <span class="porcentagem-forca">0%</span>
+
+    </div>
+
+
+    <div class="opcoes-caracteres">
+
+        <label>
+            <input type="checkbox" id="chk-maiusculas" checked>
+            Letras maiúsculas
+        </label>
+
+        <label>
+            <input type="checkbox" id="chk-minusculas" checked>
+            Letras minúsculas
+        </label>
+
+        <label>
+            <input type="checkbox" id="chk-numeros" checked>
+            Números
+        </label>
+
+        <label>
+            <input type="checkbox" id="chk-simbolos" checked>
+            Símbolos
+        </label>
+
+    </div>
+
+
+    <div class="controles">
+
+        <button class="btn-ajuste" onclick="diminuiTamanho()">-</button>
+
+        <span id="numero-senha">8</span>
+
+        <button class="btn-ajuste" onclick="aumentaTamanho()">+</button>
+
+    </div>
+
+
+    <button class="btn-gerar" onclick="geraSenha()">
+        Gerar Senha
+    </button>
+
+
+</div>
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
